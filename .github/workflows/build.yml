@@ -27,8 +27,7 @@ jobs:
           gradle-version: "8.9"
 
       - name: Extract Android project
-        run: |
-          unzip -q bulld.zip -d project
+        run: unzip -q bulld.zip -d project
 
       - name: Build debug APK
         working-directory: project
